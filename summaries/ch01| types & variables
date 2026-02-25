@@ -17,7 +17,7 @@ bool isGameOver=false;
 cout<<"enter your name:";
 cin>>playerName;
 
-cout<<"\nPlayer:"<<playerNmae<<endl;
+cout<<"\nPlayer:"<<playerName<<endl;
 cout<<"score:"<<score<<endl;
 cout<<"health:"<<health<<endl;
 cout<<"grade:"<<grade<<endl;
