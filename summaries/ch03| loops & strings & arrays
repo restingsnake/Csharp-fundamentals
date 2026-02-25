@@ -1,35 +1,36 @@
-//for loops,strings,arrays
+// My Learning Summary - Chapter 3
+// for loops, strings, arrays
+
 #include <iostream>
 #include <string>
 using namespace std;
 
-int main()
+int main() {
+    cout << "=== Chapter 3 Summary ===\n\n";
+    
+    // for loop practice
+    cout << "Counting with for loop: ";
+    for (int i = 1; i <= 5; i++) {
+        cout << i << " ";
+    }
+    
+    // string practice
+    cout << "\n\nString practice:\n";
+    string word = "learning";
+    cout << "Word: " << word << endl;
+    cout << "Size: " << word.size() << endl;
+    cout << "First letter: " << word[0] << endl;
+    
+    // array practice
+    cout << "\nArray practice:\n";
+    int scores[] = {100, 95, 88, 92, 78};
+    int total = 0;
+    for (int i = 0; i < 5; i++)
 {
-  cout<<"===chapter 3===";
-
-//counting for loops
-for(int i=1;i<=5;i++)
-{
-cout<<i<<" ";
-}
-
-//string practice
-cout<<"\n\nstring practice:\n\n;
-  string word="learning";
-  cout<<"word:"<<word<<endl;
-cout<<"size:"<<word.size()<<endl;
-cout<<"first letter:"<<word[0]<<endl;
-
-//array practice
-cout<<"\narray practice:"\n;
-int scores[]={100,95,88,92,78};
-int total =0;
-for(int i=0;i<5;i++)
-{
-cout<<"score"<<i+1<<":"<<scores[i]<<endl;
-total += scores[i];
-}
-cout<<"average:"<<total/5<<endl;
-
-return 0;
+        cout << "Score " << i+1 << ": " << scores[i] << endl;
+        total += scores[i];
+    }
+    cout << "Average: " << total/5.0 << endl;
+    
+    return 0;
 }
